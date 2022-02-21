@@ -16,6 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+// the example said deep-thoughts but i think this is right
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout",
     {
         useNewUrlParser: true,
